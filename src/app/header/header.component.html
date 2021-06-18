@@ -1,0 +1,29 @@
+<header id="header" class="col-md-12 navbar align-items-center">
+    <div class="col col-md-1">
+        <img class="img-responsive" src="assets/images/ng_logo.png" width="75" alt="ng_logo" />
+    </div>
+    <div class="col col-md-10 text-center">
+        <!-- Change This Header According to Page -->
+        <h1>About</h1>
+    </div>
+    <div class="col col-md-1">
+        <div class="nav-item dropdown align-right">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="GoToBtn" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Go To
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="GoToBtn">
+                <li><a class="dropdown-item" routerLink="insights">Insights</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/services/business']">Business Services</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/services/ai']">A.I. Services</a></li>
+                <li><a class="dropdown-item" routerLink="angular">Angular</a></li>
+                <li><a class="dropdown-item" routerLink="map">Map</a></li>
+                <li><a class="dropdown-item" routerLink="contact">Contact</a></li>
+                <li>
+                    <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" routerLink="about">About</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

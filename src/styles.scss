@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+.carousel,
+.carouselimg {
+  // width: 960px;
+  height: 360px;
+}
+
+#mid_about,
+#mid_contact,
+#mid_map,
+#mid_ng {
+  // display: flex;
+  // height: 400px;
+  // width: 1000px;
+  // padding-left: 12px !important;
+  // margin-left: 0 !important;
+}
+#aboutleft {
+  // width: 225px !important;
+  // text-align: left !important;
+  border: 1px solid black;
+}
+h3 {
+  font-size: 2.5vw;
+}
+h5 {
+  font-size: 1.9vw;
+}
+p,
+ul li,
+.btn,
+.btn-primary,
+#contactform,
+.form-label,
+.form-control,
+.input-group-text,
+.col-xl-1,
+.col-xl-2 {
+  font-size: 0.6vw !important;
+}
+#aboutright {
+  // width: 735px !important;
+  // text-align: left !important;
+  border: 1px solid black;
+  // padding: 0 !important;
+  // margin: 0 !important;
+}
+#myface {
+  height: 120px !important;
+  // padding: 2px;
+}
+#aboutrightTop {
+  // width: 100% !important;
+  // display: flex;
+}
+#aboutList {
+  // padding: 12px;
+  // width: 30%;
+  // text-align: left !important;
+}
+#aboutrightBottom {
+  // width: 100%;
+}
+/* #formrow {
+  border: 1px solid black !important;
+} */
+#contactform {
+  // text-align: justify !important;
+  // width: 550px !important;
+}
+#mid_ng {
+  flex-wrap: wrap;
+}
+.ngCard {
+  // height: 150px !important;
+  // width: 138px !important;
+  margin: 10px !important;
+  border: 1px solid darkslategrey;
+  text-align: center;
+}
+// footer {
+//   display: flex;
+// }

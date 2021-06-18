@@ -1,0 +1,21 @@
+<div><a>{{ data1.business }}</a></div>
+<div><a>{{ data1.category }}</a></div>
+<h1>{{ data1.title }}</h1>
+<div><a>{{ data1.date }}</a></div>
+<div class="row col-xs-12">
+    <div class="col col-xs-9">
+        <a style="color:blue;">Share</a>
+        <markdown src="{{ data1.uri }}"></markdown>
+    </div>
+    <div class="col col-xs-3">
+        <ul>
+            <li *ngFor="let person of data2">
+                <a>{{ person.name }}</a><br/>
+                <a>{{ person.description }}</a><br/>
+                <a *ngIf="person.linkedin" href='https://linkedin.com/in/{{person.linkedin}}'>LinkedIn</a><br/>
+                <a *ngIf="person.twitter" href='https://twitter.com/{{person.twitter}}'>Twitter</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- <div>Article comes here</div> -->

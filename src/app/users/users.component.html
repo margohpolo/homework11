@@ -1,0 +1,60 @@
+<div class="row w-100" style="padding-left:1% !important; font-size: 0.8rem !important;">
+    <table class="table table-light table-bordered text-center" *ngIf="users.length > 0">
+        <thead>
+            <tr>
+                <th scope="col">S/N</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Website</th>
+                <th scope="col">Company</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td >{{ user.email }}</td>
+            <td>
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Street</th>
+                            <th scope="col">Suite</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Zipcode</th>
+                            <th scope="col">Coordinates</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>{{ user.address.street }}</td>
+                        <td>{{ user.address.suite }}</td>
+                        <td>{{ user.address.city }}</td>
+                        <td>{{ user.address.zipcode }}</td>
+                        <td>{{ user.address.geo.lat }}, {{ user.address.geo.lng }}</td>
+                    </tr>
+                </table>
+            </td>            
+            <td>{{ user.phone }}</td>
+            <td>{{ user.website }}</td>
+            <td>
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Company Name</th>
+                            <th scope="col">Catch Phrase</th>
+                            <th scope="col">BS</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>{{ user.company.name }}</td>
+                        <td>{{ user.company.catchPhrase }}</td>
+                        <td>{{ user.company.bs }}</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
