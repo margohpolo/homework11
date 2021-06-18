@@ -6,63 +6,6 @@ let ArticlesString = { "id": "supply-chain-trans", "business": "Strategy & Consu
   "uri": "/assets/articles/supply-chain-transformation-cloud.md"
 };
 
-// export interface articlesStringInterface {
-//   id: string;
-//   business: string;
-//   category: string;
-//   title: string;
-//   date: string;
-//   uri: string;
-// }
-
-// export interface articlesInterface {
-//   articleid: string;
-//   authortype: string;
-// }
-
-// export interface articlesInterface {
-//   articleid: string;
-//   authortype: string;
-// }
-
-// abstract class Records implements articlesInterface {
-//     articleid: string;
-//     authortype: string;
-//     constructor(Articleid:string, Authortype:string) {
-//         this.articleid = Articleid;
-//         this.authortype = Authortype;
-//     }
-// }
-
-
-// export interface personInterface {
-//   id: string;
-//   name: string;
-//   description: string;
-//   linkedin?: string;
-//   twitter?: string;
-// }
-
-
-// class Person implements personInterface {
-    
-//     id: string;
-//     name: string;
-//     description: string;
-//     linkedin?: string;
-//     twitter?: string;
-
-//     constructor(Id:string, Name:string, Description:string, Linkedin?:string, Twitter?:string) {
-//         this.id = Id;
-//         this.name = Name;
-//         this.description = Description;
-//         this.linkedin = Linkedin;
-//         this.twitter = Twitter;
-//     } 
-// }
-
-// let People: Person[];
-
 let People = [ {"id": "1", "name": "KRIS TIMMERMANS", "description": "Senior Managing Director – Strategy & Consulting, Supply Chain & Operations Global Lead", "linkedin": "kris-timmermans-209800", "twitter": "KrisTimmer"}, 
   {"id": "2", "name": "DAVID SIMCHI-LEVI", "description": "Professor of Engineering Systems at MIT and Head of the MIT Data Science Lab", "linkedin": undefined, "twitter": undefined}, 
   {"id": "3", "name": "TRACEY COUNTRYMAN", "description": "Senior Managing Director – Industry X, Digital Manufacturing & Operations, Global Lead", "linkedin": "tracey-countryman-2488a64", "twitter": "tcountryman"}, 
@@ -83,16 +26,11 @@ let otherPeople = [ {"id": "7", "name": "CRAIG GOTTLIEB", "description": "Managi
 })
 export class InsightsComponent implements OnInit {
 
-  // jsonString: articlesStringInterface = JSON.parse(ArticlesString);
 
-  // peopleString: Person[] = JSON.parse(JSON.stringify(People));
-  // people: Person[] = People;
   constructor(private router: Router) { }  
-  // constructor() {}
 
   articlesString = ArticlesString;
   peopleString = People;
-  // routerUrl = '/article/' + this.articlesString.id;
   
   route() {
     event?.preventDefault();
@@ -101,13 +39,7 @@ export class InsightsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    // console.log(typeof this.articlesString, this.articlesString.title, this.articlesString.uri);
-    
-    // console.log(typeof People);
-    // console.log(typeof JSON.stringify(People));
-    // console.log(typeof this.peopleString, this.peopleString);
-    // console.log(typeof this.peopleString[0], this.peopleString[0].name);
-    // console.log(this.peopleString[0].name);
+ 
     console.log(typeof this.articlesString.id, this.articlesString.id);
     console.log(this.articlesString, this.peopleString);
   }
